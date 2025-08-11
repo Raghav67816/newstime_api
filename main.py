@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
 def load_tags():
-    with open("./data/tags.json") as tags_file:
+    with open("./tags.json") as tags_file:
         data = load(tags_file)
         tags_file.close()
 
